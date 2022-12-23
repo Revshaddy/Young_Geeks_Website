@@ -1,0 +1,495 @@
+/*[ CSS Table of contents ]
+* Header CSS
+	+ Topbar
+	+ Main Menu
+* Slider CSS
+* Notice Board CSS
+* Testimonial CSS
+* Partners CSS
+* Footer CSS
+========================================*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url("general.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Hero Slider*/
+.hero-slider{
+    width: 100%;
+    height: 600px;
+}
+
+#hero-next,
+#hero-previous{
+    color: black;
+}
+
+#slide1{
+    background: url("../images/younggeeks_images/DSC00115.JPG");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(215, 215, 215, 0.861);
+    object-fit: contain;
+}
+
+#slide2{
+    background: url("../images/younggeeks_images/DSC00118.JPG");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(215, 215, 215, 0.861);
+}
+
+#slide3{
+    background: url("../images/younggeeks_images/DSC00112.JPG");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(215, 215, 215, 0.861);
+}
+
+#slide4{
+    background: url("../images/younggeeks_images/DSC00120.JPG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(215, 215, 215, 0.861);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: white !important;
+}
+
+/*Notice*/
+.notice-section{
+    width: 100%;
+    height: 500px;
+    margin: 30px 0 0 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.notice-board{
+    width: inherit;
+    height: inherit;
+}
+
+.notice-bar{
+    width: inherit;
+    height: 23px;
+    background: #F3F3F3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-section{
+    width: 100%;
+    height: 400px;
+    margin: 50px 0 0 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.testimonial-desktop{
+    width: inherit;
+    height: inherit;
+}
+
+.testimonial-parallax-bg{
+    background: url("../images/testimonial-images/testimonial-background/testimonial-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(215, 215, 215, 0.861);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+}
+
+.testimonial-bar{
+    width: inherit;
+    height: 23px;
+    background: #F3F3F3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#testimonial-slide1,
+#testimonial-slide2,
+#testimonial-slide3{
+    background: rgba(0, 0, 0, 0.368);
+}
+
+.testimonial-slide-content{
+    height: inherit;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+  
+.testimonial-desktop  span.swiper-pagination-bullet,
+.testimonial-desktop span.swiper-pagination-bullet-active{
+    background: white !important;
+}
+
+.swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial{
+    width: 40%;
+    height: 200px;
+    background: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.desktop-testimonial-text{
+    width: 90%;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.desktop-testimonial-image{
+    width: 80px;
+    height: 80px;
+    background: url("../images/testimonial-images/william.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.testimonial-mobile{
+    display: none;
+}
+
+.partners{
+    width: 100%;
+    height: 500px;
+    margin: 30px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+#partner1{
+    background: url("../svg/logo-svg/google-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 130px 130px;
+    grid-area: 1/5/5/7;
+}
+
+#partner2{
+    background: url("../svg/logo-svg/samsung-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 150px 150px;
+    grid-area: 4/7/8/9;
+}
+
+#partner3{
+    background: url("../svg/logo-svg/tesla-9-logo-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px 150px;
+    grid-area: 4/3/8/5;
+}
+
+#partner4{
+    background: url("../svg/logo-svg/hp-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px 150px;
+    grid-area: 7/5/11/7;
+}
+
+#partner1,
+#partner2,
+#partner3,
+#partner4{
+    animation: upAndDown 2s ease infinite;
+    -webkit-animation: upAndDown 2s ease infinite;
+}
+
+@media screen and (max-width:530px){
+    #partner2{
+        background-size: 130px 130px;
+    }
+
+    .copyright-section p{
+        font-size: .7em;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #partner2,
+    #partner3,
+    #partner4{
+        background-size: 100px 100px;
+    }
+
+    #partner1{
+        background-size: 80px 80px;
+    }    
+}
+
+@media screen and (min-width: 501px) and (max-width: 890px) {
+    .testimonial-slide-content{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .testimonial{
+        height: 180px;
+        width: 80%;
+    }
+
+    .desktop-testimonial-image{
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media screen and (min-width: 891px) and (max-width: 1058px) {
+    .testimonial{
+        width: 40%;
+    }
+
+    .testimonial-slide-content{
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (min-width: 860px) and (max-width: 890px) {
+    .testimonial{
+        width: 58%;
+    }
+}
+
+@media screen and (min-width: 490px) and (max-width: 700px) {
+    .testimonial{
+        width: 58%;
+    }
+
+    #partner1{
+        grid-area: 1/4/5/8;
+    }
+       
+    #partner2{
+        grid-area: 4/8/8/11;
+    }
+       
+    #partner3{
+        grid-area: 4/1/8/4;
+    }
+       
+    #partner4{
+        grid-area: 7/4/11/8
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .top-bar,
+    .header-nav{
+        display: none;
+    }
+
+    .hero-slider{
+        height: 400px;
+    }
+
+    .notice-section{
+        height: 400px;
+    }
+
+    .desktop-testimonial{
+        display: none;
+    }
+
+    .testimonial-mobile{
+        display: block;
+        height: fit-content;
+        width: 100%;
+        margin: 30px 0 0 0;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .testimonial-bar{
+        margin: 0 0 10px 0;
+    }
+
+    .mobile-testimonial{
+        width: 50%;
+        height: 400px;
+    }
+
+    .mobile-testimonial-slide{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 18px;
+        font-size: 22px;
+        font-weight: bold;
+        color: #fff;
+        flex-direction: column;
+    }
+      
+    #card1{
+        background: var(--deepBlue);
+    }
+
+    #card2{
+        background: var(--blue);
+    }
+
+    #card3{
+        background: var(--green);
+    }
+
+    #card4{
+        background: var(--gold);
+    }
+
+    #card5{
+        background: var(--deepBlue);
+    }
+
+    #card6{
+        background: var(--blue);
+    }
+      
+    .card-content{
+        width: 80%;
+        height: 60%;
+        background: rgba(255, 255, 255, 0.708);
+        color: black;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        text-align: center;
+        font-weight: 300;
+    }
+
+    .card-content-text{
+        font-size: .9em;
+    }
+
+    .card-content-name{
+        padding: 10px 0 0 0;
+        font-size: .8em;
+        font-weight: 100;
+    }
+
+
+    .card-profile{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background: url("../images/testimonial-images/william.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #partner1{
+        grid-area: 1/4/5/8;
+    }
+       
+    #partner2{
+        grid-area: 4/7/8/11;
+    }
+       
+    #partner3{
+        grid-area: 4/1/8/5;
+    }
+       
+    #partner4{
+        grid-area: 7/4/11/8
+    }
+
+    @keyframes menuMovement {
+        from{
+            transform: translateX(500px);
+            -webkit-transform: translateX(500px);
+            -moz-transform: translateX(500px);
+            -ms-transform: translateX(500px);
+            -o-transform: translateX(500px);
+        }
+
+        to{
+            transform: none;
+            -webkit-transform: none;
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+        }
+    }
+
+    @keyframes contentMovement {
+        from{
+            transform: translateY(-60px);
+            -webkit-transform: translateY(-60px);
+            -moz-transform: translateY(-60px);
+            -ms-transform: translateY(-60px);
+            -o-transform: translateY(-60px);
+            opacity: 0;
+        }
+
+        to{
+            transform: none;
+            -webkit-transform: none;
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+            opacity: 1;
+        }
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    
+}

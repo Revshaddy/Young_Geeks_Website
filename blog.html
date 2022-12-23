@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/general.css">
+    <link rel="stylesheet" href="./CSS/blog.css">
+</head>
+<body>
+    <div class="preloader">
+        <!-- <p>Young Geeks</p> -->
+        <div class="loader-animation"></div>
+      </div>
+      <header>
+        <div class="top-bar">
+          <div class="wrapper">        
+            <div class="details" id="telephone">          
+              <span id="details-icons" class="material-icons">call</span><p>+233-204-222-551</p>
+            </div>
+            <div class="details" id="email">
+              <span id="details-icons" class="material-icons">mail</span><p>younggeeks@gmail.com</p>
+            </div>
+            <div class="details" id="schedule">
+              <span id="details-icons" class="material-icons">schedule</span><p>Saturday: 8:00am - 5:00pm</p>
+            </div>
+          </div>
+        </div>
+        <div id="main-menu">      
+          <nav class="header-nav">
+            <ul>
+              <li id="home" class="active" onclick="homeBtn()">HOME</li>
+              <li id="about-us" onclick="aboutusBtn()">ABOUT US</li>
+              <li id="our-activities" onclick="ouractivitiesBtn()">OUR ACTIVITIES</li>
+              <li id="blog" onclick="blogBtn()">BLOG</li>
+              <li id="gallery" onclick="galleryBtn()">GALLERY</li>
+              <li id="contact" onclick="contactBtn()">CONTACT</li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="mobile-header">
+        <span class="material-icons" id="menu-open">menu</span>
+      </div>
+      <div class="mobile-menu">
+        <span class="material-icons" id="menu-close">close</span>
+        <div class="younggeeks-logo"></div>
+        <div class="mobile-menu-navigation">
+          <nav>
+            <ul>
+              <li id="mobile-home" onclick="homeBtn()">HOME</li>
+              <li id="mobile-about-us" onclick="aboutusBtn()">ABOUT US</li>
+              <li id="mobile-our-activities" onclick="ouractivitiesBtn()">OUR ACTIVITIES</li>
+              <li id="mobile-blog" onclick="blogBtn()">BLOG</li>
+              <li id="mobile-gallery" onclick="galleryBtn()">GALLERY</li>
+              <li id="mobile-contact" onclick="contactBtn()">CONTACT</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    <div class="error">
+        <p>Nothing to show here</p>
+        <img src="./images/no-results-image.png" alt="" width="300px">
+    </div>
+</body>
+</html>
